@@ -1,0 +1,8 @@
+.orders {
+  margin-top: 60px;
+  background-color: white;
+}
+.orders--image {
+  display: block;
+  margin: auto;
+}
