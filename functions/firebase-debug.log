@@ -1,0 +1,67 @@
+[debug] [2022-06-11T13:26:52.370Z] ----------------------------------------------------------------------
+[debug] [2022-06-11T13:26:52.372Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mksh4\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-06-11T13:26:52.373Z] CLI Version:   11.0.1
+[debug] [2022-06-11T13:26:52.373Z] Platform:      win32
+[debug] [2022-06-11T13:26:52.373Z] Node Version:  v16.13.2
+[debug] [2022-06-11T13:26:52.374Z] Time:          Sat Jun 11 2022 18:56:52 GMT+0530 (India Standard Time)
+[debug] [2022-06-11T13:26:52.374Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-11T13:26:52.465Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-11T13:26:52.465Z] > authorizing via signed-in user (mksh400@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2022-06-11T13:26:52.525Z] [hub] writing locator at C:\Users\mksh4\AppData\Local\Temp\hub-ecommerce-webapp-c76ae.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-06-11T13:26:52.568Z] defaultcredentials: writing to file C:\Users\mksh4\AppData\Roaming\firebase\mksh400_gmail_com_application_default_credentials.json
+[debug] [2022-06-11T13:26:52.570Z] Setting GAC to C:\Users\mksh4\AppData\Roaming\firebase\mksh400_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\mksh4\\AppData\\Roaming\\firebase\\mksh400_gmail_com_application_default_credentials.json"}}
+[debug] [2022-06-11T13:26:52.574Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/adminSdkConfig [none]
+[debug] [2022-06-11T13:26:53.010Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/adminSdkConfig 200
+[debug] [2022-06-11T13:26:53.012Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/adminSdkConfig {"projectId":"ecommerce-webapp-c76ae","storageBucket":"ecommerce-webapp-c76ae.appspot.com","locationId":"us-central"}
+[debug] [2022-06-11T13:26:53.076Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/sites 
+[debug] [2022-06-11T13:26:55.038Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/sites 200
+[debug] [2022-06-11T13:26:55.040Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/sites {"sites":[{"name":"projects/ecommerce-webapp-c76ae/sites/ecommerce-webapp-c76ae","defaultUrl":"https://ecommerce-webapp-c76ae.web.app","appId":"1:732793424263:web:11583fc3f3a5778ab22b22","type":"DEFAULT_SITE"}]}
+[debug] [2022-06-11T13:26:55.042Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/webApps/1:732793424263:web:11583fc3f3a5778ab22b22/config [none]
+[debug] [2022-06-11T13:26:56.459Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/webApps/1:732793424263:web:11583fc3f3a5778ab22b22/config 200
+[debug] [2022-06-11T13:26:56.460Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/webApps/1:732793424263:web:11583fc3f3a5778ab22b22/config {"projectId":"ecommerce-webapp-c76ae","appId":"1:732793424263:web:11583fc3f3a5778ab22b22","storageBucket":"ecommerce-webapp-c76ae.appspot.com","locationId":"us-central","apiKey":"AIzaSyBXDq_1-m5RycNiljNM2mtezTVVmr8d66g","authDomain":"ecommerce-webapp-c76ae.firebaseapp.com","messagingSenderId":"732793424263","measurementId":"G-GNMGQ9K044"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-06-11T13:26:56.580Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-06-11T13:26:56.580Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-06-11T13:26:56.581Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","C:\\Users\\mksh4\\.cache\\firebase\\emulators\\ui-v1.7.0\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"C:\\\\Users\\\\mksh4\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.7.0\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-06-11T13:26:56.781Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "D:\All Files\Hasbasoft\Personal\E-Commerce Web App\ecommerce-webapp\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\" for Cloud Functions..."}}
+[debug] [2022-06-11T13:26:56.914Z] Validating nodejs source
+[debug] [2022-06-11T13:27:00.125Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-11T13:27:00.125Z] Building nodejs source
+[debug] [2022-06-11T13:27:00.125Z] Analyzing nodejs backend spec
+[debug] [2022-06-11T13:27:00.127Z] Could not find functions.yaml. Must use http discovery
