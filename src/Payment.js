@@ -22,6 +22,7 @@ function Payment() {
   const [error, setError] = useState(null);
   const [disabled, setDisabled] = useState(true);
   const [clientSecret, setClientSecret] = useState(true);
+  const stringClientSecret = clientSecret.toString();
 
   useEffect(() => {
     // generate the special stripe secret which allows us to charge a customer
@@ -45,7 +46,7 @@ function Payment() {
     setProcessing(true);
     // eslint-disable-next-line
     const payload = await stripe
-      .confirmCardPayment(clientSecret, {
+      .confirmCardPayment(stringClientSecret, {
         payment_method: {
           card: elements.getElement(CardElement),
         },

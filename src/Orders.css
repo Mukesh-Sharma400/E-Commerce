@@ -1,8 +1,9 @@
 .orders {
-  margin-top: 60px;
+  margin-top: 30px;
   background-color: white;
 }
 .orders--image {
   display: block;
   margin: auto;
+  height: 100vh;
 }
