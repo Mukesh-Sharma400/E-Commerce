@@ -32,7 +32,7 @@ function Header() {
       <div id="location--icon" className="header--option">
         <span className="header--optionLineOne">Deliver to</span>
         <span className="header--optionLineTwo">
-          {!user ? "Your Location" : "Mukesh"}
+          {!user ? "Your Location" : "Home"}
         </span>
       </div>
       <div className="header--search">
