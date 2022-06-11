@@ -1,7 +1,9 @@
 const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
+// eslint-disable-next-line
 const stripe = require("stripe")(
+// eslint-disable-next-line
   "sk_test_51KKlamSBgwgl8WP3fNmYUY57fPQkBBgYx1AXYv3fRB0VqyqTRXU5OLcpjdun1ZNCsY6VWOSFBqvHYjrFynMMTD6k00pl5x8KrG"
 );
 
@@ -11,6 +13,7 @@ const stripe = require("stripe")(
 const app = express();
 
 // - Middlewares
+// eslint-disable-next-line
 app.use(cors({ origin: true }));
 app.use(express.json());
 
