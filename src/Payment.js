@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Payment.css";
 import { useStateValue } from "./StateProvider";
 import CheckoutProduct from "./CheckoutProduct";
+// eslint-disable-next-line
 import { Link, useNavigate } from "react-router-dom";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import CurrencyFormat from "react-currency-format";
@@ -42,7 +43,7 @@ function Payment() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setProcessing(true);
-
+    // eslint-disable-next-line
     const payload = await stripe
       .confirmCardPayment(clientSecret, {
         payment_method: {

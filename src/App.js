@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./Header";
@@ -17,6 +18,7 @@ const promise = loadStripe(
 );
 
 function App() {
+  // eslint-disable-next-line
   const [{}, dispatch] = useStateValue();
 
   useEffect(() => {
@@ -35,6 +37,7 @@ function App() {
         });
       }
     });
+    // eslint-disable-next-line
   }, []);
 
   return (
