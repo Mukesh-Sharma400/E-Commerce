@@ -1,0 +1,325 @@
+[debug] [2022-08-12T14:20:44.227Z] ----------------------------------------------------------------------
+[debug] [2022-08-12T14:20:44.229Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mksh4\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-08-12T14:20:44.230Z] CLI Version:   11.0.1
+[debug] [2022-08-12T14:20:44.230Z] Platform:      win32
+[debug] [2022-08-12T14:20:44.230Z] Node Version:  v16.13.2
+[debug] [2022-08-12T14:20:44.237Z] Time:          Fri Aug 12 2022 19:50:44 GMT+0530 (India Standard Time)
+[debug] [2022-08-12T14:20:44.238Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-12T14:20:44.244Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-08-12T14:20:44.345Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-12T14:20:44.346Z] > authorizing via signed-in user (mksh400@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2022-08-12T14:20:44.369Z] [hub] writing locator at C:\Users\mksh4\AppData\Local\Temp\hub-ecommerce-webapp-c76ae.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-08-12T14:20:44.415Z] defaultcredentials: writing to file C:\Users\mksh4\AppData\Roaming\firebase\mksh400_gmail_com_application_default_credentials.json
+[debug] [2022-08-12T14:20:44.417Z] Setting GAC to C:\Users\mksh4\AppData\Roaming\firebase\mksh400_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\mksh4\\AppData\\Roaming\\firebase\\mksh400_gmail_com_application_default_credentials.json"}}
+[debug] [2022-08-12T14:20:44.419Z] > refreshing access token with scopes: []
+[debug] [2022-08-12T14:20:44.420Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-08-12T14:20:44.615Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Fri, 12 Aug 2022 14:20:44 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-08-12T14:20:44.641Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/adminSdkConfig [none]
+[debug] [2022-08-12T14:20:45.017Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-08-12T14:20:45.019Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-08-12T14:20:45.204Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/adminSdkConfig 200
+[debug] [2022-08-12T14:20:45.204Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/adminSdkConfig {"projectId":"ecommerce-webapp-c76ae","storageBucket":"ecommerce-webapp-c76ae.appspot.com","locationId":"us-central"}
+[debug] [2022-08-12T14:20:45.231Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/sites 
+[debug] [2022-08-12T14:20:47.262Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/sites 200
+[debug] [2022-08-12T14:20:47.263Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/sites {"sites":[{"name":"projects/ecommerce-webapp-c76ae/sites/ecommerce-webapp-c76ae","defaultUrl":"https://ecommerce-webapp-c76ae.web.app","appId":"1:732793424263:web:11583fc3f3a5778ab22b22","type":"DEFAULT_SITE"}]}
+[debug] [2022-08-12T14:20:47.265Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/webApps/1:732793424263:web:11583fc3f3a5778ab22b22/config [none]
+[debug] [2022-08-12T14:20:48.903Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/webApps/1:732793424263:web:11583fc3f3a5778ab22b22/config 200
+[debug] [2022-08-12T14:20:48.904Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/webApps/1:732793424263:web:11583fc3f3a5778ab22b22/config {"projectId":"ecommerce-webapp-c76ae","appId":"1:732793424263:web:11583fc3f3a5778ab22b22","storageBucket":"ecommerce-webapp-c76ae.appspot.com","locationId":"us-central","apiKey":"AIzaSyBXDq_1-m5RycNiljNM2mtezTVVmr8d66g","authDomain":"ecommerce-webapp-c76ae.firebaseapp.com","messagingSenderId":"732793424263","measurementId":"G-GNMGQ9K044"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-08-12T14:20:49.030Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-12T14:20:49.031Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-08-12T14:20:49.032Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","C:\\Users\\mksh4\\.cache\\firebase\\emulators\\ui-v1.7.0\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"C:\\\\Users\\\\mksh4\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.7.0\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-08-12T14:20:49.224Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "D:\All Files\Hasbasoft\Personal\E-Commerce Web App\ecommerce-webapp\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\" for Cloud Functions..."}}
+[debug] [2022-08-12T14:20:49.351Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2022-08-12T14:20:52.701Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-12T14:20:52.701Z] Building nodejs source
+[debug] [2022-08-12T14:20:52.701Z] Analyzing nodejs backend spec
+[debug] [2022-08-12T14:20:52.703Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-12T14:20:53.086Z] Serving at port 9005
+
+[debug] [2022-08-12T14:20:53.362Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-12T14:20:53.370Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5001/ecommerce-webapp-c76ae/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/ecommerce-webapp-c76ae/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ localhost:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-11-09T16:09:01.841Z] ----------------------------------------------------------------------
+[debug] [2022-11-09T16:09:01.843Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mksh4\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-11-09T16:09:01.844Z] CLI Version:   11.0.1
+[debug] [2022-11-09T16:09:01.844Z] Platform:      win32
+[debug] [2022-11-09T16:09:01.844Z] Node Version:  v16.13.2
+[debug] [2022-11-09T16:09:01.849Z] Time:          Wed Nov 09 2022 21:39:01 GMT+0530 (India Standard Time)
+[debug] [2022-11-09T16:09:01.850Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-09T16:09:01.854Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-11-09T16:09:01.968Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-09T16:09:01.968Z] > authorizing via signed-in user (mksh400@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2022-11-09T16:09:01.996Z] [hub] writing locator at C:\Users\mksh4\AppData\Local\Temp\hub-ecommerce-webapp-c76ae.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-11-09T16:09:02.050Z] defaultcredentials: writing to file C:\Users\mksh4\AppData\Roaming\firebase\mksh400_gmail_com_application_default_credentials.json
+[debug] [2022-11-09T16:09:02.052Z] Setting GAC to C:\Users\mksh4\AppData\Roaming\firebase\mksh400_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\mksh4\\AppData\\Roaming\\firebase\\mksh400_gmail_com_application_default_credentials.json"}}
+[debug] [2022-11-09T16:09:02.055Z] > refreshing access token with scopes: []
+[debug] [2022-11-09T16:09:02.056Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-11-09T16:09:02.258Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 09 Nov 2022 16:09:04 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-11-09T16:09:02.268Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/adminSdkConfig [none]
+[debug] [2022-11-09T16:09:02.592Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-11-09T16:09:02.592Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-11-09T16:09:02.776Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/adminSdkConfig 200
+[debug] [2022-11-09T16:09:02.776Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/adminSdkConfig {"projectId":"ecommerce-webapp-c76ae","storageBucket":"ecommerce-webapp-c76ae.appspot.com","locationId":"us-central"}
+[debug] [2022-11-09T16:09:02.789Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/sites 
+[debug] [2022-11-09T16:09:04.026Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/sites 200
+[debug] [2022-11-09T16:09:04.026Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/sites {"sites":[{"name":"projects/ecommerce-webapp-c76ae/sites/ecommerce-webapp-c76ae","defaultUrl":"https://ecommerce-webapp-c76ae.web.app","appId":"1:732793424263:web:11583fc3f3a5778ab22b22","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-09T16:09:04.026Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/webApps/1:732793424263:web:11583fc3f3a5778ab22b22/config [none]
+[debug] [2022-11-09T16:09:05.522Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/webApps/1:732793424263:web:11583fc3f3a5778ab22b22/config 200
+[debug] [2022-11-09T16:09:05.522Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-webapp-c76ae/webApps/1:732793424263:web:11583fc3f3a5778ab22b22/config {"projectId":"ecommerce-webapp-c76ae","appId":"1:732793424263:web:11583fc3f3a5778ab22b22","storageBucket":"ecommerce-webapp-c76ae.appspot.com","locationId":"us-central","apiKey":"AIzaSyBXDq_1-m5RycNiljNM2mtezTVVmr8d66g","authDomain":"ecommerce-webapp-c76ae.firebaseapp.com","messagingSenderId":"732793424263","measurementId":"G-GNMGQ9K044"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-11-09T16:09:05.571Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-11-09T16:09:05.571Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-11-09T16:09:05.572Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","C:\\Users\\mksh4\\.cache\\firebase\\emulators\\ui-v1.7.0\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"C:\\\\Users\\\\mksh4\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.7.0\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-11-09T16:09:05.809Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "D:\All Files\Hasbasoft\Personal\E-Commerce Web App\ecommerce-webapp\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\" for Cloud Functions..."}}
+[debug] [2022-11-09T16:09:05.858Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-09T16:09:10.883Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-09T16:09:10.883Z] Building nodejs source
+[debug] [2022-11-09T16:09:10.883Z] Analyzing nodejs backend spec
+[debug] [2022-11-09T16:09:10.887Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-09T16:09:11.716Z] Serving at port 9005
+
+[debug] [2022-11-09T16:09:12.019Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-09T16:09:12.039Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5001/ecommerce-webapp-c76ae/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/ecommerce-webapp-c76ae/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ localhost:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-11-09T16:10:45.391Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-11-09T16:10:45.392Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-11-09T16:10:45.393Z] Accepted request POST /ecommerce-webapp-c76ae/us-central1/api/payments/create?total=841300 --> us-central1-api
+[debug] [2022-11-09T16:10:45.411Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-11-09T16:10:45.412Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-11-09T16:10:45.412Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-11-09T16:10:45.413Z] [worker-us-central1-api-cd719bc2-e023-4752-b6ea-9b9c6a1f5324]: Assigning socketPath: \\?\pipe\D:\All Files\Hasbasoft\Personal\E-Commerce Web App\ecommerce-webapp\functions\8280 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-cd719bc2-e023-4752-b6ea-9b9c6a1f5324]: Assigning socketPath: \\\\?\\pipe\\D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\8280"}}
+[debug] [2022-11-09T16:10:45.413Z] [worker-us-central1-api-cd719bc2-e023-4752-b6ea-9b9c6a1f5324]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-cd719bc2-e023-4752-b6ea-9b9c6a1f5324]: BUSY"}}
+[debug] [2022-11-09T16:10:47.822Z] [runtime-status] [8280] Functions runtime initialized. {"cwd":"D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions","node_version":"16.13.2"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Functions runtime initialized. {\"cwd\":\"D:\\\\All Files\\\\Hasbasoft\\\\Personal\\\\E-Commerce Web App\\\\ecommerce-webapp\\\\functions\",\"node_version\":\"16.13.2\"}"}}
+[debug] [2022-11-09T16:10:47.824Z] [runtime-status] [8280] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Disabled runtime features: undefined"}}
+[debug] [2022-11-09T16:10:47.829Z] [runtime-status] [8280] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\All Files\\\\Hasbasoft\\\\Personal\\\\E-Commerce Web App\\\\ecommerce-webapp\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-09T16:10:47.831Z] [runtime-status] [8280] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\All Files\\\\Hasbasoft\\\\Personal\\\\E-Commerce Web App\\\\ecommerce-webapp\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-09T16:10:47.832Z] [runtime-status] [8280] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-11-09T16:10:47.833Z] [runtime-status] [8280] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\All Files\\\\Hasbasoft\\\\Personal\\\\E-Commerce Web App\\\\ecommerce-webapp\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-09T16:10:47.890Z] [runtime-status] [8280] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-11-09T16:10:47.890Z] [runtime-status] [8280] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\All Files\\\\Hasbasoft\\\\Personal\\\\E-Commerce Web App\\\\ecommerce-webapp\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-11-09T16:10:47.891Z] [runtime-status] [8280] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\All Files\\\\Hasbasoft\\\\Personal\\\\E-Commerce Web App\\\\ecommerce-webapp\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-09T16:10:47.894Z] [runtime-status] [8280] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\All Files\\\\Hasbasoft\\\\Personal\\\\E-Commerce Web App\\\\ecommerce-webapp\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-09T16:10:47.894Z] [runtime-status] [8280] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\All Files\\\\Hasbasoft\\\\Personal\\\\E-Commerce Web App\\\\ecommerce-webapp\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-09T16:10:47.895Z] [runtime-status] [8280] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\All Files\\\\Hasbasoft\\\\Personal\\\\E-Commerce Web App\\\\ecommerce-webapp\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-11-09T16:10:48.148Z] [runtime-status] [8280] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-11-09T16:10:48.150Z] [runtime-status] [8280] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Running api in signature http"}}
+[debug] [2022-11-09T16:10:48.155Z] [runtime-status] [8280] Attempting to listen to socketPath: \\?\pipe\D:\All Files\Hasbasoft\Personal\E-Commerce Web App\ecommerce-webapp\functions\8280 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Attempting to listen to socketPath: \\\\?\\pipe\\D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\8280"}}
+[debug] [2022-11-09T16:10:48.162Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-11-09T16:10:48.164Z] [functions] Got req.url=/ecommerce-webapp-c76ae/us-central1/api/payments/create?total=841300, mapping to path=/payments/create?total=841300 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ecommerce-webapp-c76ae/us-central1/api/payments/create?total=841300, mapping to path=/payments/create?total=841300"}}
+[debug] [2022-11-09T16:10:48.181Z] [runtime-status] [8280] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Ephemeral server handling POST request"}}
+[info] >  Payment Request: 841300 {"user":"Payment Request: 841300","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Payment Request: 841300"}}
+[debug] [2022-11-09T16:10:48.216Z] [runtime-status] [8280] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-11-09T16:10:48.952Z] [worker-us-central1-api-cd719bc2-e023-4752-b6ea-9b9c6a1f5324]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-cd719bc2-e023-4752-b6ea-9b9c6a1f5324]: IDLE"}}
+[debug] [2022-11-09T16:10:48.954Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-11-09T16:10:57.837Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-11-09T16:10:57.838Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-11-09T16:10:57.838Z] Accepted request POST /ecommerce-webapp-c76ae/us-central1/api/payments/create?total=0 --> us-central1-api
+[debug] [2022-11-09T16:10:57.838Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-11-09T16:10:57.839Z] [worker-us-central1-api-cd719bc2-e023-4752-b6ea-9b9c6a1f5324]: Assigning socketPath: \\?\pipe\D:\All Files\Hasbasoft\Personal\E-Commerce Web App\ecommerce-webapp\functions\8280 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-cd719bc2-e023-4752-b6ea-9b9c6a1f5324]: Assigning socketPath: \\\\?\\pipe\\D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\8280"}}
+[debug] [2022-11-09T16:10:57.839Z] [worker-us-central1-api-cd719bc2-e023-4752-b6ea-9b9c6a1f5324]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-cd719bc2-e023-4752-b6ea-9b9c6a1f5324]: BUSY"}}
+[debug] [2022-11-09T16:10:57.842Z] [runtime-status] [8280] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-11-09T16:10:57.845Z] [runtime-status] [8280] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Running api in signature http"}}
+[debug] [2022-11-09T16:10:57.847Z] [runtime-status] [8280] Attempting to listen to socketPath: \\?\pipe\D:\All Files\Hasbasoft\Personal\E-Commerce Web App\ecommerce-webapp\functions\8280 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Attempting to listen to socketPath: \\\\?\\pipe\\D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\8280"}}
+[debug] [2022-11-09T16:10:57.854Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-11-09T16:10:57.855Z] [functions] Got req.url=/ecommerce-webapp-c76ae/us-central1/api/payments/create?total=0, mapping to path=/payments/create?total=0 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ecommerce-webapp-c76ae/us-central1/api/payments/create?total=0, mapping to path=/payments/create?total=0"}}
+[debug] [2022-11-09T16:10:57.865Z] [runtime-status] [8280] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Ephemeral server handling POST request"}}
+[info] >  Payment Request: 0 {"user":"Payment Request: 0","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Payment Request: 0"}}
+[debug] [2022-11-09T16:10:57.870Z] [runtime-status] [8280] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8280] Ephemeral server survived."}}
+[info] >  D:\All Files\Hasbasoft\Personal\E-Commerce Web App\ecommerce-webapp\functions\node_modules\stripe\lib\Error.js:40 {"user":"D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\node_modules\\stripe\\lib\\Error.js:40\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\node_modules\\stripe\\lib\\Error.js:40\r"}}
+[info] >          return new StripeInvalidRequestError(rawStripeError); {"user":"        return new StripeInvalidRequestError(rawStripeError);\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m         return new StripeInvalidRequestError(rawStripeError);\r"}}
+[info] >                 ^ {"user":"               ^\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m                ^\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  StripeInvalidRequestError: This value must be greater than or equal to 1. {"user":"StripeInvalidRequestError: This value must be greater than or equal to 1.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m StripeInvalidRequestError: This value must be greater than or equal to 1.\r"}}
+[info] >      at Function.generate (D:\All Files\Hasbasoft\Personal\E-Commerce Web App\ecommerce-webapp\functions\node_modules\stripe\lib\Error.js:40:16) {"user":"    at Function.generate (D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\node_modules\\stripe\\lib\\Error.js:40:16)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Function.generate (D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\node_modules\\stripe\\lib\\Error.js:40:16)\r"}}
+[info] >      at res.toJSON.then.StripeAPIError.message (D:\All Files\Hasbasoft\Personal\E-Commerce Web App\ecommerce-webapp\functions\node_modules\stripe\lib\StripeResource.js:220:35) {"user":"    at res.toJSON.then.StripeAPIError.message (D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\node_modules\\stripe\\lib\\StripeResource.js:220:35)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at res.toJSON.then.StripeAPIError.message (D:\\All Files\\Hasbasoft\\Personal\\E-Commerce Web App\\ecommerce-webapp\\functions\\node_modules\\stripe\\lib\\StripeResource.js:220:35)\r"}}
+[info] >      at processTicksAndRejections (node:internal/process/task_queues:96:5) { {"user":"    at processTicksAndRejections (node:internal/process/task_queues:96:5) {\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at processTicksAndRejections (node:internal/process/task_queues:96:5) {\r"}}
+[info] >    type: 'StripeInvalidRequestError', {"user":"  type: 'StripeInvalidRequestError',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   type: 'StripeInvalidRequestError',\r"}}
+[info] >    raw: { {"user":"  raw: {\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   raw: {\r"}}
+[info] >      code: 'parameter_invalid_integer', {"user":"    code: 'parameter_invalid_integer',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     code: 'parameter_invalid_integer',\r"}}
+[info] >      doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer', {"user":"    doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer',\r"}}
+[info] >      message: 'This value must be greater than or equal to 1.', {"user":"    message: 'This value must be greater than or equal to 1.',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     message: 'This value must be greater than or equal to 1.',\r"}}
+[info] >      param: 'amount', {"user":"    param: 'amount',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     param: 'amount',\r"}}
+[info] >      request_log_url: 'https://dashboard.stripe.com/test/logs/req_tLTdBjdy3keJcZ?t=1668010260', {"user":"    request_log_url: 'https://dashboard.stripe.com/test/logs/req_tLTdBjdy3keJcZ?t=1668010260',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     request_log_url: 'https://dashboard.stripe.com/test/logs/req_tLTdBjdy3keJcZ?t=1668010260',\r"}}
+[info] >      type: 'invalid_request_error', {"user":"    type: 'invalid_request_error',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     type: 'invalid_request_error',\r"}}
+[info] >      headers: { {"user":"    headers: {\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     headers: {\r"}}
+[info] >        server: 'nginx', {"user":"      server: 'nginx',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       server: 'nginx',\r"}}
+[info] >        date: 'Wed, 09 Nov 2022 16:11:00 GMT', {"user":"      date: 'Wed, 09 Nov 2022 16:11:00 GMT',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       date: 'Wed, 09 Nov 2022 16:11:00 GMT',\r"}}
+[info] >        'content-type': 'application/json', {"user":"      'content-type': 'application/json',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'content-type': 'application/json',\r"}}
+[info] >        'content-length': '363', {"user":"      'content-length': '363',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'content-length': '363',\r"}}
+[info] >        connection: 'keep-alive', {"user":"      connection: 'keep-alive',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       connection: 'keep-alive',\r"}}
+[info] >        'access-control-allow-credentials': 'true', {"user":"      'access-control-allow-credentials': 'true',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'access-control-allow-credentials': 'true',\r"}}
+[info] >        'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE', {"user":"      'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE',\r"}}
+[info] >        'access-control-allow-origin': '*', {"user":"      'access-control-allow-origin': '*',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'access-control-allow-origin': '*',\r"}}
+[info] >        'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required', {"user":"      'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',\r"}}
+[info] >        'access-control-max-age': '300', {"user":"      'access-control-max-age': '300',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'access-control-max-age': '300',\r"}}
+[info] >        'cache-control': 'no-cache, no-store', {"user":"      'cache-control': 'no-cache, no-store',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'cache-control': 'no-cache, no-store',\r"}}
+[info] >        'idempotency-key': 'e0f553ab-7176-435e-a206-82576c347946', {"user":"      'idempotency-key': 'e0f553ab-7176-435e-a206-82576c347946',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'idempotency-key': 'e0f553ab-7176-435e-a206-82576c347946',\r"}}
+[info] >        'original-request': 'req_tLTdBjdy3keJcZ', {"user":"      'original-request': 'req_tLTdBjdy3keJcZ',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'original-request': 'req_tLTdBjdy3keJcZ',\r"}}
+[info] >        'request-id': 'req_tLTdBjdy3keJcZ', {"user":"      'request-id': 'req_tLTdBjdy3keJcZ',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'request-id': 'req_tLTdBjdy3keJcZ',\r"}}
+[info] >        'stripe-version': '2020-08-27', {"user":"      'stripe-version': '2020-08-27',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'stripe-version': '2020-08-27',\r"}}
+[info] >        'strict-transport-security': 'max-age=63072000; includeSubDomains; preload' {"user":"      'strict-transport-security': 'max-age=63072000; includeSubDomains; preload'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'strict-transport-security': 'max-age=63072000; includeSubDomains; preload'\r"}}
+[info] >      }, {"user":"    },\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     },\r"}}
+[info] >      statusCode: 400, {"user":"    statusCode: 400,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     statusCode: 400,\r"}}
+[info] >      requestId: 'req_tLTdBjdy3keJcZ' {"user":"    requestId: 'req_tLTdBjdy3keJcZ'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     requestId: 'req_tLTdBjdy3keJcZ'\r"}}
+[info] >    }, {"user":"  },\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   },\r"}}
+[info] >    rawType: 'invalid_request_error', {"user":"  rawType: 'invalid_request_error',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   rawType: 'invalid_request_error',\r"}}
+[info] >    code: 'parameter_invalid_integer', {"user":"  code: 'parameter_invalid_integer',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   code: 'parameter_invalid_integer',\r"}}
+[info] >    doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer', {"user":"  doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer',\r"}}
+[info] >    param: 'amount', {"user":"  param: 'amount',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   param: 'amount',\r"}}
+[info] >    detail: undefined, {"user":"  detail: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   detail: undefined,\r"}}
+[info] >    headers: { {"user":"  headers: {\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   headers: {\r"}}
+[info] >      server: 'nginx', {"user":"    server: 'nginx',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     server: 'nginx',\r"}}
+[info] >      date: 'Wed, 09 Nov 2022 16:11:00 GMT', {"user":"    date: 'Wed, 09 Nov 2022 16:11:00 GMT',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     date: 'Wed, 09 Nov 2022 16:11:00 GMT',\r"}}
+[info] >      'content-type': 'application/json', {"user":"    'content-type': 'application/json',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'content-type': 'application/json',\r"}}
+[info] >      'content-length': '363', {"user":"    'content-length': '363',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'content-length': '363',\r"}}
+[info] >      connection: 'keep-alive', {"user":"    connection: 'keep-alive',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     connection: 'keep-alive',\r"}}
+[info] >      'access-control-allow-credentials': 'true', {"user":"    'access-control-allow-credentials': 'true',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'access-control-allow-credentials': 'true',\r"}}
+[info] >      'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE', {"user":"    'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE',\r"}}
+[info] >      'access-control-allow-origin': '*', {"user":"    'access-control-allow-origin': '*',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'access-control-allow-origin': '*',\r"}}
+[info] >      'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required', {"user":"    'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',\r"}}
+[info] >      'access-control-max-age': '300', {"user":"    'access-control-max-age': '300',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'access-control-max-age': '300',\r"}}
+[info] >      'cache-control': 'no-cache, no-store', {"user":"    'cache-control': 'no-cache, no-store',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'cache-control': 'no-cache, no-store',\r"}}
+[info] >      'idempotency-key': 'e0f553ab-7176-435e-a206-82576c347946', {"user":"    'idempotency-key': 'e0f553ab-7176-435e-a206-82576c347946',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'idempotency-key': 'e0f553ab-7176-435e-a206-82576c347946',\r"}}
+[info] >      'original-request': 'req_tLTdBjdy3keJcZ', {"user":"    'original-request': 'req_tLTdBjdy3keJcZ',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'original-request': 'req_tLTdBjdy3keJcZ',\r"}}
+[info] >      'request-id': 'req_tLTdBjdy3keJcZ', {"user":"    'request-id': 'req_tLTdBjdy3keJcZ',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'request-id': 'req_tLTdBjdy3keJcZ',\r"}}
+[info] >      'stripe-version': '2020-08-27', {"user":"    'stripe-version': '2020-08-27',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'stripe-version': '2020-08-27',\r"}}
+[info] >      'strict-transport-security': 'max-age=63072000; includeSubDomains; preload' {"user":"    'strict-transport-security': 'max-age=63072000; includeSubDomains; preload'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'strict-transport-security': 'max-age=63072000; includeSubDomains; preload'\r"}}
+[info] >    }, {"user":"  },\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   },\r"}}
+[info] >    requestId: 'req_tLTdBjdy3keJcZ', {"user":"  requestId: 'req_tLTdBjdy3keJcZ',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   requestId: 'req_tLTdBjdy3keJcZ',\r"}}
+[info] >    statusCode: 400, {"user":"  statusCode: 400,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   statusCode: 400,\r"}}
+[info] >    charge: undefined, {"user":"  charge: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   charge: undefined,\r"}}
+[info] >    decline_code: undefined, {"user":"  decline_code: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   decline_code: undefined,\r"}}
+[info] >    payment_intent: undefined, {"user":"  payment_intent: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_intent: undefined,\r"}}
+[info] >    payment_method: undefined, {"user":"  payment_method: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method: undefined,\r"}}
+[info] >    payment_method_type: undefined, {"user":"  payment_method_type: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method_type: undefined,\r"}}
+[info] >    setup_intent: undefined, {"user":"  setup_intent: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   setup_intent: undefined,\r"}}
+[info] >    source: undefined {"user":"  source: undefined\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   source: undefined\r"}}
+[info] >  } {"user":"}\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m }\r"}}
+[debug] [2022-11-09T16:10:58.225Z] [worker-us-central1-api-cd719bc2-e023-4752-b6ea-9b9c6a1f5324]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-cd719bc2-e023-4752-b6ea-9b9c6a1f5324]: exited"}}
+[debug] [2022-11-09T16:10:58.226Z] [worker-us-central1-api-cd719bc2-e023-4752-b6ea-9b9c6a1f5324]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-cd719bc2-e023-4752-b6ea-9b9c6a1f5324]: FINISHED"}}
+[debug] [2022-11-09T16:10:58.226Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  hosting: 127.0.0.1 - - [09/Nov/2022:16:27:25 +0000] "GET /Loading HTTP/1.1" 200 716 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2022:16:27:25 +0000] \"GET /Loading HTTP/1.1\" 200 716 \"http://localhost:3001/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Nov/2022:16:27:25 +0000] "GET /allpost HTTP/1.1" 200 716 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2022:16:27:25 +0000] \"GET /allpost HTTP/1.1\" 200 716 \"http://localhost:3001/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Nov/2022:16:28:03 +0000] "POST /signin HTTP/1.1" 200 716 "http://localhost:3001/signin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2022:16:28:03 +0000] \"POST /signin HTTP/1.1\" 200 716 \"http://localhost:3001/signin\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Nov/2022:16:28:16 +0000] "POST /signin HTTP/1.1" 200 716 "http://localhost:3001/signin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2022:16:28:16 +0000] \"POST /signin HTTP/1.1\" 200 716 \"http://localhost:3001/signin\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Nov/2022:16:28:37 +0000] "GET /favicon.ico HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2022:16:28:37 +0000] \"GET /favicon.ico HTTP/1.1\" 200 3870 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Nov/2022:16:28:37 +0000] "GET /logo512.png HTTP/1.1" 200 9664 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2022:16:28:37 +0000] \"GET /logo512.png HTTP/1.1\" 200 9664 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
