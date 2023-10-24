@@ -50,11 +50,11 @@ To run the E-Commerce Web App locally, follow these steps:
 2. Install all dependencies by navigating to the project's root directory and running the following command:
 
    ```bash
-      npm install
+   npm install
    ```
 
 3. Start the development server by running the following command:
 
    ```bash
-      npm start
+   npm start
    ```
